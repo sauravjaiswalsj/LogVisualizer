@@ -1,43 +1,66 @@
 # Project Title
 
 ## Description
-This project is a [brief description of what your project does]. It aims to [explain the purpose and goals of the project].
+This project is a log visualization dashboard that allows users to view, filter, and analyze log data in real-time. It aims to provide insights into log activity and trends, enhancing decision-making and troubleshooting processes.
 
 ## Features
 - **Real-time Data Processing**: Allows users to receive updates in real-time, addressing the need for timely information in applications such as chat systems or live dashboards.
-- **Data Visualization**: Offers graphical representations of data, making it easier for users to understand complex information and trends, thus enhancing decision-making.
-- **API Integration**: Connects with third-party services to fetch and send data, solving the problem of data silos and enabling a more comprehensive user experience.
+- **Data Visualization**: Offers graphical representations of log data, making it easier for users to understand complex information and trends.
+- **API Integration**: Connects with a backend service to fetch and send log data, enabling a comprehensive user experience.
 - **Responsive Design**: Ensures that the application is accessible on various devices, solving the issue of usability across different screen sizes.
 
 ## Technologies Used
 This project is built using the following technologies:
-- **Backend**: Node.js, Express
+- **Backend**: C++ with Crow framework
 - **Frontend**: React
-- **Database**: MongoDB
-- **Other Tools**: Docker, Git, Webpack
+- **Database**: SQLite
+- **Other Tools**:Git, Recharts (for data visualization)
 
 ## Installation
-To get a local copy up and running, follow these steps:
 
-1. Clone the repository:
+### Backend
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/sauravjaiswalsj/LogVisualizer.git
+   cd LogVisualizer/backend
    ```
-2. Navigate to the project directory:
+
+2. **Build the backend**:
+   Make sure you have a C++ compiler installed (like g++) and Crow library set up. You can compile the backend using:
    ```bash
-   cd yourproject
+   g++ -o main src/main.cpp -I/path/to/crow/include -I/path/to/nlohmann/json/include
    ```
-3. Install the dependencies:
+
+3. **Run the backend**:
    ```bash
-   # For example, if using Node.js
+   ./main
+   ```
+
+### Frontend
+1. **Navigate to the frontend directory**:
+   ```bash
+   cd ../log-visualization-frontend
+   ```
+
+2. **Install dependencies**:
+   Make sure you have Node.js and npm installed. Then run:
+   ```bash
    npm install
    ```
 
+3. **Build the frontend**:
+   ```bash
+   npm run build
+   ```
+
+4. **Run the frontend**:
+   ```bash
+   npm start
+   ```
+
 ## Usage
-To run the project, use the following command:
-```bash
-npm start
-```
+- Access the frontend application at `http://localhost:3000` (or the port specified in your React app).
+- The backend API will be running at `http://localhost:8080/api/logs`.
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
