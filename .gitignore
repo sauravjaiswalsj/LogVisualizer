@@ -210,8 +210,3 @@ sketch
 .DS_Store
 build/
 node_modules/
-
-# Ignore all files in the Crow directory
-backend/include/Crow/*
-# Keep the Crow directory
-!backend/include/Crow/.gitkeep

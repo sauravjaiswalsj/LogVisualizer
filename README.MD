@@ -3,6 +3,8 @@
 ## Description
 This project is a log visualization dashboard that allows users to view, filter, and analyze log data in real-time. It aims to provide insights into log activity and trends, enhancing decision-making and troubleshooting processes.
 
+<img width="1664" alt="image" src="https://github.com/user-attachments/assets/cbda593b-24b2-4543-8ea1-9b312874ecaa">
+
 ## Features
 - **Real-time Data Processing**: Allows users to receive updates in real-time, addressing the need for timely information in applications such as chat systems or live dashboards.
 - **Data Visualization**: Offers graphical representations of log data, making it easier for users to understand complex information and trends.
